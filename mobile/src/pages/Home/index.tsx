@@ -49,7 +49,7 @@ const Home = () => {
     function handleNavigatoToPoints() {
         navigation.navigate('Points', {
             uf,
-            city: 'Alem Paraiba'
+            city
         })
     }
 
@@ -85,22 +85,6 @@ const Home = () => {
                         onValueChange={(value) => setCity(value)}
                         items={listOfCity}
                     />
-                    {/* <TextInput
-                        style={styles.input}
-                        placeholder="Digite a UF"
-                        value={uf}
-                        onChangeText={setUf}
-                        maxLength={2}
-                        autoCapitalize="characters"
-                        autoCorrect={false}
-                    />
-                    <TextInput
-                        style={styles.input}
-                        placeholder="Digite a Cidade"
-                        value={city}
-                        onChangeText={setCity}
-                        autoCorrect={false}
-                    /> */}
                     <RectButton style={styles.button} onPress={handleNavigatoToPoints}>
                         <View style={styles.buttonIcon}>
                             <Text>
